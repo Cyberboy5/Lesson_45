@@ -41,14 +41,15 @@ class Time:
         return (f"\nTime:{self.hour:02d}:{self.minute:02d}:{self.second:02d}\n")
     
     def nextSecond(self):
-        if second == 59:
-            self.second == 0
+        if self.second == 59:
+            self.second = 0
             if self.minute == 59:
                 self.minute = 0
                 self.hour +=1
             else:    
                 self.minute += 1
-        self.second +=1
+        else:
+            self.second +=1
 
     def previousSecond(self):
 
@@ -86,4 +87,6 @@ except:
 
 date1 = Time(hour,minute,second)
 
-print(date1.previousSecond())
+date1.nextSecond()
+
+print(date1.ToString())

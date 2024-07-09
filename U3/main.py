@@ -50,8 +50,13 @@ year = int(int(input("Enter The Year:")))
 try:
     if not (1 <= day <= 31 and  1 <= month <= 12 and 1990 <= year <= 9999):
         raise print("Iltimos to`gri sana kiriting")
+    
 except:
     exit(1)
 
+
+
 date1 = Date(day,month,year)
+print(date1.ToString())
+date1.set_day(12)
 print(date1.ToString())

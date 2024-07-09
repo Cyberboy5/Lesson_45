@@ -31,11 +31,11 @@ class Rectangle:
         return (self.hight + self.width)*2
     
     def get_info(self):
-        print(f"""
+        return f"""
     Hight:{self.hight}
     Width:{self.width}
     Area:{self.get_area()}
-    Perimeter:{self.get_perimeter()}""")
+    Perimeter:{self.get_perimeter()}"""
         
 
 #MAIN
@@ -43,5 +43,5 @@ r1 = Rectangle(11,10)
 r2 = Rectangle(25,12)
 r3 = Rectangle(5,20)
 
-r1.get_info()
+print(r1.get_info())
 print()
