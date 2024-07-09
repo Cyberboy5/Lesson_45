@@ -60,6 +60,7 @@ class Account:
 user1 = Account("1234ABC","Ali",2000)    
 user2 = Account("1R4G4C","Vali",0) 
 user3 = Account("1RS4A5C","Aziz",1500) 
+
 print()
 print(user1.debit(100))
 print(user1.transferTo(user2,200))
