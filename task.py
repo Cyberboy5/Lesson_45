@@ -1,3 +1,19 @@
+"""
+Mashq 3: Kutubxona boshqarish tizimini yaratish
+Ma'lumot:
+Endi siz Library classini yaratasiz va oldingi mashqlar orqali yaratilgan Book va 
+User classlarini foydalanasiz.
+
+Vazifa:
+Library classini yarating.
+
+Library classining atributlari: kitoblar ro'yxati (books), foydalanuvchilar ro'yxati (users).
+Kitoblarni qo'shish (add_book), foydalanuvchilarni qo'shish (add_user),
+kitobni olish (borrow_book) va qaytarish (return_book) funksiyalarini yarating.
+Misol Kirish va Chiqish:
+
+"""
+
 class Book:
     def __init__(self, title: str, author: str, publication_year: int):
         self.title = title
